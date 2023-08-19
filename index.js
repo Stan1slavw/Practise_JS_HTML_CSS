@@ -35,7 +35,7 @@ function title(block) {
 }
 
 function text(block){
-   return `<div class="row">
+    return `<div class="row">
             <div class="col-sm">
                 <p>${block.value}</p>
             </div>
@@ -43,7 +43,7 @@ function text(block){
 }
 
 function columns(block){
-   const html = block.value.map(item => `<div class="col-sm">${item}</div>`)
+    const html = block.value.map(item => `<div class="col-sm">${item}</div>`)
 
     return `<div class="row">
             ${html.join('')};
