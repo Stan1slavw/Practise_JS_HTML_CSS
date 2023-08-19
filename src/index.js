@@ -1,5 +1,5 @@
 const model = [
-    {type: 'title', value: 'Hello World from JS'},
+    {type: 'title', value: 'Hello World from JS!'},
     {type: 'text', value: 'here we go with some text'},
     {
         type: 'columns', value: [
@@ -9,7 +9,7 @@ const model = [
             '5555555555'
         ]
     },
-    {type: 'image', value: './assets/image.png'}
+    {type: 'image', value: './src/assets/image.png'}
 ]
 
 const $site = document.querySelector('#site')
@@ -55,6 +55,5 @@ function columns(block){
 }
 
 function image(block){
-
     return `<div class="row"><img src=${block.value}></div>`
 }
