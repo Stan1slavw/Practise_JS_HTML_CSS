@@ -1,3 +1,5 @@
+//Этот файл может быть удален, так как больше не нужен
+
 import {row, col, css} from "./utils";
 
 function title(block) {
@@ -11,7 +13,6 @@ function text(block) {
 
 function columns(block) {
     const html = block.value.map(item => col(item))
-
     return row(`${html.join('')}`, css(block.options.styles));
 }
 
