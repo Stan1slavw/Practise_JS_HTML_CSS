@@ -13,6 +13,7 @@ export function css(styles = {}) {
     // })
     // return array.join(';')
 
+    if (typeof styles === 'string') return styles
     return Object.keys(styles).map(key => `${key}: ${styles[key]}`).join(';')
 }
 
